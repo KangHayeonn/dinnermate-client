@@ -1,0 +1,41 @@
+@import '@/styles/base/variable.scss';
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	min-width: $container-min-width;
+	padding: 20px 0 30px 60px;
+	background-color: $color-surface-white;
+}
+
+.footer-description {
+	@include text-caption;
+	color: $color-surface-variant;
+
+	display: flex;
+	flex-direction: column;
+
+	p {
+		margin: 0;
+	}
+
+	.copyright {
+		padding-top: 5px;
+	}
+
+	.developers {
+		display: flex;
+		flex-direction: column;
+		padding: 10px 0;
+	
+		.row {
+			display: flex;
+			gap: 25px;
+			.title {
+				width: 3.75rem;
+			}
+		}
+	}
+}
