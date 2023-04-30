@@ -1,16 +1,16 @@
-// 전역으로 사용하는 색상, 주석은 다크모드 제작 시 사용
+/* 전역으로 사용하는 색상, 주석은 다크모드 제작 시 사용 */
 $color-primary: #415a77;
 $color-secondary: #778da9;
 $color-hover: #4d78af;
 $color-disabled: #bdc8d6;
 $color-background-white: #fdfdfd;
 $color-surface-white: #f5f5f5;
-// $color-background-black: #0d1b2a;
-// $color-surface-black: rgba(27, 38, 59, 0.8);
+/* $color-background-black: #0d1b2a; */
+/* $color-surface-black: rgba(27, 38, 59, 0.8); */
 $color-error: #ff0000;
 $color-focus: #2a82f0;
 $color-toast-background: rgba(0, 0, 0, 0.8);
-// $color-text-white: #e0e1dd;
+/* $color-text-white: #e0e1dd; */
 $color-text-black: #0d1b2a;
 $color-placeholder: rgba(0, 0, 0, 0.3);
 $color-star: #ffdf00;
@@ -19,7 +19,7 @@ $color-white: #ffffff;
 $color-surface-variant: #bfc8cc;
 $color-dimmed: rgba(0, 0, 0, 0.3);
 
-// 전역으로 사용하는 폰트 스타일
+/* 전역으로 사용하는 폰트 스타일 */
 @mixin text-h1 {
 	font-weight: 400;
 	font-size: 6rem;
@@ -111,10 +111,10 @@ $color-dimmed: rgba(0, 0, 0, 0.3);
 	letter-spacing: 1.5px;
 }
 
-// 전역으로 사용하는 그림자 스타일
+/* 전역으로 사용하는 그림자 스타일 */
 $shadow-bottom: 0 4px 4px rgba(0, 0, 0, 0.25);
 $shadow-center: 0 0 5px rgba(0, 0, 0, 0.25);
 $shadow-dropdown: 1px 2px 4px rgba(0, 0, 0, 0.25);
 
-// 전역 레이아웃 값
+/* 전역 레이아웃 값 */
 $container-min-width : 1280px;

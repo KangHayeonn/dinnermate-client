@@ -1,10 +1,56 @@
+@import '@/styles/base/variable.scss';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
     margin: 0;
+    &::-webkit-scrollbar {
+        display: none; /* 크롬, 사파리, 엣지 등등 webkit 기반 브라우저*/
+      }
+    -ms-overflow-style: none; /* 인터넷 익스플로러 */
+    scrollbar-width: none; /* 파이어폭스 */
 }
 
 * {
     box-sizing: border-box;
     font-family: 'Roboto';
+    &::-webkit-scrollbar {
+        width: 10px;
+      }
+    &::-webkit-scrollbar-thumb {
+        background-color: #E7E4E4;
+        border-radius: 12px;
+        background-clip: padding-box;
+        border: 2px solid transparent;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 10px;
+    }
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: $container-min-width;
+}
+  
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+fieldset, img {
+    border: 0 none;
+}
+button {
+    border: 0 none;
+    cursor: pointer;
+}
+a {
+    border: 0;
+	outline: 0;
+	text-decoration: none;
+	cursor: pointer;
 }

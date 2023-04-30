@@ -1,0 +1,59 @@
+@import '@/styles/base/variable.scss';
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 15px;
+	height: 3.75rem;
+	background-color: $color-primary;
+	width: 100%;
+	min-width: $container-min-width;
+}
+
+.header__title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.625rem;
+	text-decoration: none;
+
+	.logo {
+		height: 2.5rem;
+		width: 2.5rem;
+	}
+
+	p {
+		@include text-h4;
+		color: $color-white;
+		width : 220px;
+	}
+}
+
+.header__btn {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.625rem;
+
+	&__my-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		box-shadow: $shadow-center;
+		border-radius: 1.25rem;
+		color: $color-background-white;
+		background-color: $color-secondary;
+		width: 40px;
+		height: 40px;
+		&:hover{
+			background-color: $color-hover
+		}
+
+		&--img {
+			content: url('@/assets/images/profile.svg');
+		}
+	}
+}
