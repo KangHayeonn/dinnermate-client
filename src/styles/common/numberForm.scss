@@ -1,0 +1,51 @@
+@import "@/styles/base/variable.scss";
+
+.number-container {
+    display: flex;
+    align-items: center;
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.number-content {
+    @include text-subtitle2();
+    width: 4.375rem;
+    background-color: $color-surface-white;
+    color: $color-text-black;
+    text-align: center;
+    margin: 0;
+    padding: 0.25rem 0;
+
+    &__ {
+        color: $color-placeholder;
+    }
+}
+
+.number-input {
+    @include text-subtitle2();
+    text-align: center;
+    appearance: none;
+    width: 4.375rem;
+    padding: 0.25rem 0;
+    border: none;
+    background-color: $color-surface-white;
+    color: $color-text-black;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.number-disabled { 
+    &:hover {
+        cursor: default;
+    }
+}
