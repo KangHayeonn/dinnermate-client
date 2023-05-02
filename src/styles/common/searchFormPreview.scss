@@ -1,0 +1,28 @@
+@import '@/styles/base/variable.scss';
+
+.search-preview{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width:  100%;
+
+    &__list{
+        background-color : transparent;
+        @include text-body2();
+        display : flex;
+        align-items: center;
+		height: 1.875rem;
+        padding: 5px;
+
+        cursor: pointer;
+
+        &:hover{
+            background-color: $color-surface-variant;
+        }
+    }
+}
+
+ul, li{
+    padding : 0;
+    margin: 0;
+}

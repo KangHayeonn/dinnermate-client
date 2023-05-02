@@ -1,0 +1,42 @@
+@import '@/styles/base/variable.scss';
+
+.text-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	box-shadow: $shadow-center;
+	border-radius: 1.25rem;
+	color: $color-background-white;
+	border: none;
+	box-shadow:none; 
+
+	&.primary {
+		background-color: $color-primary;
+		&:hover {
+			background-color: $color-hover;
+		}
+	}
+
+	&.secondary {
+		background-color: $color-secondary;
+
+		&:hover {
+			background-color: $color-hover;
+		}
+	}
+
+	&.disabled {
+		background-color: $color-disabled;
+		cursor: default;
+	}
+
+	&.surface {
+		background-color: $color-surface-white;
+		color: $color-text-black;
+
+		&:hover {
+			background-color: $color-surface-variant;
+		}
+	}
+}

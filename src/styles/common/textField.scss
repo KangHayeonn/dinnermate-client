@@ -1,0 +1,54 @@
+@import '@/styles/base/variable.scss';
+
+.text-container {
+  width: 100%;
+}
+
+.text-field__input {
+  @include text-body2();
+  width: 100%;
+  height: 1.875rem;
+  background-color: $color-surface-white;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  outline: none;
+  padding-left: 5px;
+  padding-right: 10px;
+
+  &.error {
+    border: 1px solid $color-error;
+  }
+
+  &.white {
+    background-color: $color-background-white;
+  }
+
+  &:not(.error):focus{
+    border: 1px solid $color-focus;
+  }
+
+  &:focus {
+    outline: none;
+    &::placeholder{
+      color : transparent;
+    }
+  }
+
+  ::placeholder {
+    color: $color-placeholder;
+  }
+}
+
+.text-field__message {
+  @include text-overline();
+  height: 14px;
+  white-space: nowrap;
+
+  &.error{
+    color: $color-error;
+  }
+
+  &.success{
+    color: $color-focus;
+  }
+}

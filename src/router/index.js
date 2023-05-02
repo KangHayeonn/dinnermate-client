@@ -24,6 +24,11 @@ const routes = [
     component: () => import('@/views/MainPage.vue'),
   },
   {
+    path: '/sample',
+    name: 'sample',
+    component: () => import('@/sample/SamplePage.vue'),
+  },
+  {
     path: '*',
     component: () => import('@/views/NotFoundPage.vue'),
   },
