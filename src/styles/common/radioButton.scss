@@ -1,0 +1,59 @@
+@import "@/styles/base/variable.scss";
+
+/* BASIC TYPE */
+.radio-btn {
+    display: flex;
+}
+
+.radio-btn__input {
+    display: none;
+}
+
+.radio-btn__input + .radio-btn__label {
+    padding-right: 10px;
+    background: url("@/assets/images/radio.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.radio-btn__input:checked + .radio-btn__label {
+    background: url("@/assets/images/radio_checked.svg");
+    background-repeat: no-repeat;
+}
+
+.radio-btn__label-text {
+    margin-left : 18px;
+}
+
+/* ETC */
+.radio-btn-container {
+    display: flex;
+    :nth-child(2) {
+        border-radius: 3px;
+    }
+
+    &__label {
+        @include text-body3();
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6.25rem;
+        height: 1.875rem;
+        color: $color-white;
+        background: $color-disabled;
+        cursor: pointer;
+    }
+
+    &__input {
+        appearance: none;
+        margin: 0;
+    }
+
+    &__input:checked + &__label {
+        background-color: $color-primary;
+    }
+
+    &__input:disabled + &__label {
+        cursor: default;
+    }
+}
