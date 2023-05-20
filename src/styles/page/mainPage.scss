@@ -1,0 +1,34 @@
+@import '@/styles/base/variable.scss';
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 0.625rem;
+}
+
+.main-title { 
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: $color-primary;
+    text-decoration: none;
+    cursor: default;
+    h1 {
+        @include text-h2();
+    }
+}
+
+.main-title__logo {
+    content: url('@/assets/logo.svg');
+}
+
+.main-search {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 48rem;
+}
