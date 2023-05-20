@@ -6,7 +6,7 @@
         class="dropdown-button"
         :class="{ opened: isOpen }"
         @click="onMenuClick"
-        v-click-outside="onClickOutSide"
+        v-click-outside="onClickOutside"
       >
         <span>{{ selectedMenuItem }}</span>
         <img

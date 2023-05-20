@@ -4,13 +4,18 @@
       <img alt="logo" class="main-title__logo" />
       <h1>DINNER MATE</h1>
     </div>
-    <div class="main-search">search</div>
+    <AddressCompanySearchForm />
   </div>
 </template>
 
 <script>
+import AddressCompanySearchForm from '@/components/search/AddressCompanySearchForm.vue';
+
 export default {
   name: 'MainPage',
+  components: {
+    AddressCompanySearchForm,
+  },
   data() {
     return {};
   },
