@@ -4,8 +4,22 @@
       <p>DINNER MATE</p>
     </router-link>
     <div v-if="!isLogin" class="header__btn">
-      <router-link to="/login"> SignIn </router-link>
-      <router-link to="/signup"> SignUp </router-link>
+      <router-link to="/login">
+        <TextButton
+          :height="height"
+          :width="width"
+          color="secondary"
+          text="SignIn"
+        />
+      </router-link>
+      <router-link to="/signup">
+        <TextButton
+          :height="height"
+          :width="width"
+          color="secondary"
+          text="SignUp"
+        />
+      </router-link>
     </div>
     <div v-else class="header__btn">
       Logout
@@ -19,11 +33,18 @@
 </template>
 
 <script>
+import TextButton from './TextButton.vue';
+
 export default {
   name: 'AppHeader',
+  components: {
+    TextButton,
+  },
   data() {
     return {
       isLogin: false,
+      width: 91,
+      height: 40,
     };
   },
   methods: {},

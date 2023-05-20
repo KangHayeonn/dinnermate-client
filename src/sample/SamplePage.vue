@@ -9,6 +9,7 @@
     <SliderForm />
     <TextButton />
     <TextField />
+    <DropdownMenu />
   </div>
 </template>
 
@@ -21,6 +22,7 @@ import SearchForm from '@/components/common/SearchForm.vue';
 import SliderForm from '@/components/common/SliderForm.vue';
 import TextButton from '@/components/common/TextButton.vue';
 import TextField from '@/components/common/TextField.vue';
+import DropdownMenu from '@/components/common/DropdownMenu.vue';
 
 export default {
   name: 'SamplePage',
@@ -33,6 +35,7 @@ export default {
     SliderForm,
     TextButton,
     TextField,
+    DropdownMenu,
   },
   data() {
     return {};

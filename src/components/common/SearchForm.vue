@@ -1,36 +1,34 @@
 <template>
-  <div>
-    <section class="search-area">
-      <div
-        class="search-container"
-        :class="[
-          { 'search-container__border': bordered },
-          background
-            ? 'search-container__background'
-            : 'search-container__surface',
-          { 'search-container__focus': isFocus },
-        ]"
-      >
-        <div class="search">
-          <input
-            type="text"
-            ref="input"
-            :placeholder="setPlaceholder"
-            v-model="value"
-            @focus="activeFocus"
-            @blur="inactiveFocus"
-          />
-          <img src="@/assets/images/searchIcon.svg" alt="search" />
-        </div>
-        <SearchFormPreview
-          :search-value="value"
-          @changeValue="changeValue"
-          v-if="!isAddress"
-          v-show="isFocus"
+  <section class="search-area">
+    <div
+      class="search-container"
+      :class="[
+        { 'search-container__border': bordered },
+        background
+          ? 'search-container__background'
+          : 'search-container__surface',
+        { 'search-container__focus': isFocus },
+      ]"
+    >
+      <div class="search">
+        <input
+          type="text"
+          ref="input"
+          :placeholder="setPlaceholder"
+          v-model="value"
+          @focus="activeFocus"
+          @blur="inactiveFocus"
         />
+        <img src="@/assets/images/searchIcon.svg" alt="search" />
       </div>
-    </section>
-  </div>
+      <SearchFormPreview
+        v-if="!isAddress"
+        v-show="isFocus"
+        :search-value="value"
+        @changeValue="changeValue"
+      />
+    </div>
+  </section>
 </template>
 
 <script>
